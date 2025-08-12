@@ -1,0 +1,186 @@
+:root {
+  --color-black: #000000;
+  --color-dark-bg: #0a0a0a;
+  --color-card-bg: #1a1a1a;
+  --color-army-green: #7cb342;
+  --color-olive-green: #8bc34a;
+  --color-light-green: #aed581;
+  --color-mint-green: #c8e6c9;
+  --color-sage-green: #9ccc65;
+  --color-forest-green: #689f38;
+  --color-lime-accent: #76ff03;
+  --color-bright-green: #64dd17;
+  --color-neon-green: #00e676;
+  --color-white: #FFFFFF;
+  --color-grey: #CCCCCC;
+  --color-light-grey: #e0e0e0;
+  --color-dark-grey: #333333;
+  --color-medium-grey: #666666;
+  --font-military: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-monospace: 'Courier New', monospace;
+  
+  /* Team component variables */
+  --bg-primary: var(--color-black);
+  --bg-secondary: var(--color-card-bg);
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-grey);
+  --accent-green: var(--color-army-green);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, var(--color-black) 0%, #1a2e1a 30%, var(--color-forest-green) 70%, var(--color-army-green) 100%);
+  background-attachment: fixed;
+  color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Global Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.military-heading {
+  font-family: var(--font-military);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(75, 83, 32, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(75, 83, 32, 0.6);
+}
+
+.army-button {
+  background: linear-gradient(135deg, var(--color-army-green), var(--color-bright-green));
+  color: var(--color-white);
+  border: 1px solid var(--color-neon-green);
+  padding: 15px 30px;
+  font-family: var(--font-military);
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(118, 255, 3, 0.2);
+}
+
+.army-button:hover {
+  background: linear-gradient(135deg, var(--color-bright-green), var(--color-neon-green));
+  box-shadow: 0 0 30px rgba(118, 255, 3, 0.6);
+  transform: translateY(-2px);
+  border-color: var(--color-lime-accent);
+}
+
+.green-text {
+  color: var(--color-army-green);
+}
+
+.army-text {
+  color: var(--color-army-green);
+}
+
+/* Animations */
+@keyframes radarSweep {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .military-heading {
+    font-size: 24px;
+  }
+  
+  .army-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .military-heading {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}

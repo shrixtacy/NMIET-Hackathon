@@ -1,0 +1,357 @@
+/* Team Page Styles */
+.team-page {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.team-hero {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  padding: 4rem 0 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.team-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin: 1rem 0;
+  font-family: 'Courier New', monospace;
+}
+
+/* Section Headers */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.section-icon {
+  color: var(--accent-green);
+  background: rgba(0, 255, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-family: var(--font-military);
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Core Team Section */
+.core-team-section {
+  margin: 4rem 0;
+}
+
+.core-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-green);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+  transition: left 0.5s ease;
+}
+
+.team-member-card:hover::before {
+  left: 100%;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2);
+}
+
+.member-image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent-green);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 255, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.member-image:hover .member-overlay {
+  opacity: 1;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-green);
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.member-contribution {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skill-tag {
+  background: rgba(0, 255, 0, 0.1);
+  color: var(--accent-green);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid var(--accent-green);
+}
+
+/* Volunteers Section */
+.volunteers-section {
+  margin: 4rem 0;
+  background: var(--bg-secondary);
+  padding: 3rem 0;
+  border-radius: 12px;
+}
+
+.volunteer-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border: 1px solid var(--accent-green);
+}
+
+.stat-item svg {
+  color: var(--accent-green);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-green);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.volunteers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.volunteer-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.volunteer-card:hover {
+  border-color: var(--accent-green);
+  transform: translateX(5px);
+}
+
+.volunteer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.volunteer-name {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.volunteer-appreciation {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-green);
+}
+
+.volunteer-appreciation h3 {
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+.volunteer-appreciation p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Team Values Section */
+.team-values-section {
+  margin: 4rem 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-3px);
+}
+
+.value-card svg {
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+.value-card h4 {
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Team CTA */
+.team-cta {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 3rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 2px solid var(--accent-green);
+}
+
+.team-cta h3 {
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.team-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .core-team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .volunteer-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .volunteers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-member-card {
+    padding: 1.5rem;
+  }
+  
+  .member-image {
+    width: 100px;
+    height: 100px;
+  }
+}

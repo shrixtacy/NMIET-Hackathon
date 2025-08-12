@@ -1,0 +1,6 @@
+@import url('./styles/hero.css');
+@import url('./styles/sections.css');
+@import url('./styles/navbar.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

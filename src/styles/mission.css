@@ -1,0 +1,619 @@
+/* Mission Page - Clean Black Design */
+.mission-page {
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.mission-hero {
+  background: #000000;
+  padding: 100px 0 60px;
+  border-bottom: 3px solid #808000;
+  text-align: center;
+}
+
+.mission-hero h1 {
+  font-family: 'Courier New', monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mission-subtitle {
+  font-size: 20px;
+  color: #cccccc;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.mission-classification {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a1a1a;
+  border: 2px solid #808000;
+  padding: 12px 24px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Section Styling */
+.mission-section {
+  padding: 60px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #808000;
+}
+
+.section-icon {
+  color: #9ACD32;
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #808000;
+}
+
+.section-title {
+  font-family: 'Courier New', monospace;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Content Cards */
+.content-card {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.content-card:hover {
+  border-color: #808000;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Problem Statement */
+.problem-overview h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+  color: #9ACD32;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.problem-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+/* Stats Grid */
+.challenge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.stat-item {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: #9ACD32;
+  transform: scale(1.05);
+}
+
+.stat-number {
+  font-family: 'Courier New', monospace;
+  font-size: 36px;
+  font-weight: bold;
+  color: #9ACD32;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Areas Grid */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.area-card {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.area-card:hover {
+  border-color: #9ACD32;
+  transform: translateY(-5px);
+}
+
+.area-card svg {
+  color: #9ACD32;
+  margin-bottom: 20px;
+}
+
+.area-card h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.area-card p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Objectives List */
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.objective-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #111111;
+  border: 1px solid #333333;
+  border-left: 4px solid #9ACD32;
+  padding: 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.objective-item:hover {
+  background: #1a1a1a;
+  transform: translateX(10px);
+}
+
+.objective-item svg {
+  color: #9ACD32;
+  flex-shrink: 0;
+}
+
+.objective-item span {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Requirements List */
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.requirements-list li {
+  background: #111111;
+  border: 1px solid #333333;
+  border-left: 4px solid #808000;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #cccccc;
+  border-radius: 4px;
+}
+
+.requirements-list li strong {
+  color: #9ACD32;
+}
+
+/* Deliverables Grid */
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.deliverable-card {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.deliverable-card:hover {
+  border-color: #9ACD32;
+  transform: translateY(-3px);
+}
+
+.deliverable-number {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: #9ACD32;
+  color: #000000;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deliverable-card h5 {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 20px 0 15px 0;
+  text-transform: uppercase;
+}
+
+.deliverable-card p {
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Innovation Areas */
+.innovation-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.innovation-area {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.innovation-area h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: #9ACD32;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.innovation-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.innovation-area li {
+  font-size: 13px;
+  color: #cccccc;
+  padding: 8px 0;
+  border-bottom: 1px solid #222222;
+  position: relative;
+  padding-left: 20px;
+}
+
+.innovation-area li:last-child {
+  border-bottom: none;
+}
+
+.innovation-area li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #9ACD32;
+  font-size: 12px;
+}
+
+/* Evaluation Criteria */
+.criteria-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.criteria-item {
+  display: flex;
+  gap: 30px;
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.criteria-item:hover {
+  border-color: #9ACD32;
+  transform: translateX(5px);
+}
+
+.criteria-weight {
+  font-family: 'Courier New', monospace;
+  font-size: 48px;
+  font-weight: bold;
+  color: #9ACD32;
+  flex-shrink: 0;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.criteria-details h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.criteria-details p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.criteria-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.criteria-details li {
+  font-size: 13px;
+  color: #cccccc;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.criteria-details li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #9ACD32;
+  font-size: 16px;
+}
+
+/* Success Examples */
+.success-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.example-card {
+  background: #111111;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.example-card:hover {
+  border-color: #9ACD32;
+  transform: translateY(-3px);
+}
+
+.example-card h4 {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: #9ACD32;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.example-card p {
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.mission-cta-section {
+  background: #111111;
+  border: 3px solid #808000;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.cta-content h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 32px;
+  color: #9ACD32;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cta-content p {
+  font-size: 16px;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.army-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #9ACD32;
+  color: #000000;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid #9ACD32;
+}
+
+.army-button:hover {
+  background: #000000;
+  color: #9ACD32;
+  transform: translateY(-2px);
+}
+
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #808000;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #808000;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.mission-stats {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.mission-stat svg {
+  color: #9ACD32;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-hero {
+    padding: 80px 0 40px;
+  }
+  
+  .challenge-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .areas-grid,
+  .deliverables-grid,
+  .innovation-areas,
+  .success-examples {
+    grid-template-columns: 1fr;
+  }
+  
+  .criteria-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .criteria-weight {
+    width: auto;
+    font-size: 36px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mission-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mission-cta-section {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .challenge-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .cta-content h3 {
+    font-size: 24px;
+  }
+}

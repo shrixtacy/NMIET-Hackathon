@@ -1,0 +1,75 @@
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
+import FaultyTerminal from './FaultyTerminal';
+
+const Hero = () => {
+  return (
+    <section className="hero-section relative">
+      {/* Faulty Terminal Background */}
+      <div className="absolute inset-0 z-0">
+        <FaultyTerminal
+          scale={1.5}
+          gridMul={[2, 1]}
+          digitSize={1.2}
+          timeScale={1}
+          pause={false}
+          scanlineIntensity={1}
+          glitchAmount={1}
+          flickerAmount={1}
+          noiseAmp={1}
+          chromaticAberration={0}
+          dither={0}
+          curvature={0}
+          tint="#808000"
+          mouseReact={true}
+          mouseStrength={0.5}
+          pageLoadAnimation={false}
+          brightness={0.3}
+        />
+      </div>
+      
+      {/* Content overlay */}
+      <div className="container relative z-10 pointer-events-none">
+        <div className="hero-content">
+          <div className="hero-left">
+            <div className="hero-badge fade-in-up">
+              <span className="green-text">🇮🇳</span> Free Registration – Open to All Colleges & Universities
+            </div>
+            
+            <h1 className="hero-title military-heading fade-in-up">
+              NMIET Inter-College <span className="green-text">AI Hackathon 2025</span>
+            </h1>
+            
+            <p className="hero-subtitle fade-in-up">
+              <span className="green-text">Innovating for Defence.</span> Building for Bharat.
+            </p>
+            
+            <div className="hero-details fade-in-up">
+              <div className="detail-item">
+                <span className="army-text">📍 Location:</span> Near AIIMS Bhubaneswar, Sijua, Patrapada
+              </div>
+              <div className="detail-item">
+                <span className="army-text">🎯 Format:</span> Stage 1: Online Shortlisting | Stage 2: In-Person Hackathon
+              </div>
+            </div>
+            
+            <div className="hero-actions fade-in-up pointer-events-auto">
+              <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button glow-effect">
+                Register Now
+              </a>
+              <a href="#about" className="learn-more-btn">
+                Learn More <ChevronDown size={16} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="hero-scroll-indicator relative z-10 pointer-events-auto">
+        <ChevronDown size={24} className="bounce" />
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
