@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Menu, X, Terminal, Shield } from 'lucide-react';
 
 const Navbar = () => {
@@ -7,6 +9,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -26,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className={`terminal-navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-brand">
+        <Link href="/" className="navbar-brand">
           <Terminal className="brand-icon" size={24} />
           <span className="brand-text">
             <span className="brand-main">NMIET</span>
@@ -61,7 +65,7 @@ const Navbar = () => {
             ) : (
               <Link
                 key={index}
-                to={item.href}
+                href={item.href}
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
@@ -108,7 +112,7 @@ const Navbar = () => {
             ) : (
               <Link
                 key={index}
-                to={item.href}
+                href={item.href}
                 className="mobile-nav-link"
                 onClick={() => setIsOpen(false)}
               >
