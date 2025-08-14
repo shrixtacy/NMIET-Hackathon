@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Target, Cpu, Users, AlertTriangle, Zap, CheckCircle2, Layers, BookOpen, Award, Clock, MapPin } from 'lucide-react';
+import { Shield, Target, Cpu, Users, AlertTriangle, Zap, CheckCircle2, BookOpen, Clock, MapPin } from 'lucide-react';
 import '../styles/mission.css';
 
 const Mission: React.FC = () => {
@@ -28,7 +28,7 @@ const Mission: React.FC = () => {
               <p className="problem-description">
                 In an era of evolving security threats and technological advancement, the Indian Armed Forces require 
                 cutting-edge digital solutions to maintain operational superiority. Traditional defense systems face 
-                challenges in real-time data processing, secure communication, threat assessment, and soldier support 
+                challenges in real-time data processing, secure communication, threat assessment and soldier support 
                 in high-risk environments.
               </p>
               
@@ -58,7 +58,7 @@ const Mission: React.FC = () => {
                 <div className="area-card">
                   <Shield size={40} />
                   <h4>Real-time Surveillance</h4>
-                  <p>Advanced monitoring systems for border security, threat detection, and situational awareness using AI-powered analytics.</p>
+                  <p>Advanced monitoring systems for border security, threat detection and situational awareness using AI-powered analytics.</p>
                 </div>
                 <div className="area-card">
                   <Users size={40} />
@@ -68,12 +68,12 @@ const Mission: React.FC = () => {
                 <div className="area-card">
                   <AlertTriangle size={40} />
                   <h4>Threat Detection</h4>
-                  <p>Intelligent systems for early warning, anomaly detection, and predictive threat assessment using machine learning.</p>
+                  <p>Intelligent systems for early warning, anomaly detection and predictive threat assessment using machine learning.</p>
                 </div>
                 <div className="area-card">
                   <Cpu size={40} />
                   <h4>Soldier Support</h4>
-                  <p>Digital assistance for personnel in high-risk zones including navigation, health monitoring, and tactical support.</p>
+                  <p>Digital assistance for personnel in high-risk zones including navigation, health monitoring and tactical support.</p>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Mission: React.FC = () => {
               <h3 style={{color: '#9ACD32', fontSize: '22px'}}>Primary Mission</h3>
               <p className="problem-description">
                 Design and develop a <strong style={{color: '#9ACD32'}}>scalable, secure, and intelligent digital ecosystem</strong> that can 
-                revolutionize how the Indian Armed Forces operate, communicate, and respond to threats in the modern battlefield.
+                revolutionize how the Indian Armed Forces operate, communicate and respond to threats in the modern battlefield.
               </p>
             </div>
 
@@ -136,49 +136,49 @@ const Mission: React.FC = () => {
                 India's defense infrastructure spans across diverse terrains, from the icy heights of Siachen to the dense forests of the Northeast, 
                 from the vast deserts of Rajasthan to the extensive coastlines of the Arabian Sea and Bay of Bengal. Each of these environments 
                 presents unique challenges that require sophisticated technological solutions. Traditional defense systems, while robust, often 
-                operate in silos, creating gaps in communication, delayed response times, and inefficient resource allocation.
+                operate in silos, creating gaps in communication, delayed response times and inefficient resource allocation.
               </p>
               
               <p className="problem-description">
-                The modern battlefield is no longer confined to physical territories. Cyber warfare, information warfare, and hybrid threats 
+                The modern battlefield is no longer confined to physical territories. Cyber warfare, information warfare and hybrid threats 
                 have expanded the definition of national security. Our armed forces need to simultaneously monitor physical borders, cyber 
-                infrastructure, communication networks, and intelligence feeds - all while ensuring the safety and effectiveness of our personnel 
+                infrastructure, communication networks and intelligence feeds - all while ensuring the safety and effectiveness of our personnel 
                 in high-risk operational zones.
               </p>
 
               <h3 style={{color: '#9ACD32', fontSize: '22px', marginTop: '40px', marginBottom: '20px'}}>Scale of the Challenge</h3>
               <p className="problem-description">
-                Consider the magnitude: India has over 15,000 kilometers of land borders with seven countries, a coastline of 7,516 kilometers, 
+                Consider the magnitude: India has over 15,000 kilometers of land borders with seven countries, a coastline of 7,516 kilometers 
                 and an Exclusive Economic Zone of over 2 million square kilometers. Monitoring and securing this vast expanse requires coordination 
-                between the Army, Navy, Air Force, Coast Guard, and various paramilitary forces. Each service has its own communication protocols, 
-                data formats, and operational procedures, making seamless integration a complex challenge.
+                between the Army, Navy, Air Force, Coast Guard and various paramilitary forces. Each service has its own communication protocols, 
+                data formats and operational procedures, making seamless integration a complex challenge.
               </p>
 
               <p className="problem-description">
                 The human element adds another layer of complexity. Our armed forces comprise over 1.4 million active personnel deployed across 
                 diverse environments - from high-altitude posts where temperatures drop to -50°C to desert outposts where they soar above 50°C. 
-                These brave men and women need real-time support, accurate intelligence, reliable communication, and immediate assistance during 
+                These brave men and women need real-time support, accurate intelligence, reliable communication and immediate assistance during 
                 emergencies. Current systems often fail to provide this level of integrated support.
               </p>
 
               <h3 style={{color: '#9ACD32', fontSize: '22px', marginTop: '40px', marginBottom: '20px'}}>Technological Gaps in Current Systems</h3>
               <p className="problem-description">
-                Legacy defense systems were designed for a different era. Many still rely on manual processes, paper-based reporting, and 
+                Legacy defense systems were designed for a different era. Many still rely on manual processes, paper-based reporting and 
                 fragmented communication channels. While these systems have served us well, they are increasingly inadequate for modern threats. 
-                Data silos prevent comprehensive threat assessment, delayed information flow hampers quick decision-making, and lack of predictive 
+                Data silos prevent comprehensive threat assessment, delayed information flow hampers quick decision-making and lack of predictive 
                 capabilities means we're often reactive rather than proactive.
               </p>
 
               <p className="problem-description">
                 Intelligence gathering and analysis, crucial for national security, often involves processing vast amounts of data from satellites, 
-                drones, ground sensors, human intelligence, and open-source information. Current systems struggle to correlate this information 
-                in real-time, identify patterns, predict threats, and provide actionable insights to field commanders and policy makers.
+                drones, ground sensors, human intelligence and open-source information. Current systems struggle to correlate this information 
+                in real-time, identify patterns, predict threats and provide actionable insights to field commanders and policy makers.
               </p>
 
               <p className="problem-description">
-                Communication between different units, especially in remote areas, faces challenges due to terrain, weather conditions, and 
+                Communication between different units, especially in remote areas, faces challenges due to terrain, weather conditions and 
                 infrastructure limitations. A patrol unit in Ladakh might lose contact with their base station, a naval vessel in the Indian 
-                Ocean might face communication blackouts, or an air force squadron might need to coordinate with ground forces using incompatible 
+                Ocean might face communication blackouts or an air force squadron might need to coordinate with ground forces using incompatible 
                 communication systems.
               </p>
             </div>
@@ -202,17 +202,17 @@ const Mission: React.FC = () => {
               </p>
 
               <p className="problem-description">
-                Recent global conflicts have demonstrated the critical importance of real-time intelligence, seamless communication, and rapid 
+                Recent global conflicts have demonstrated the critical importance of real-time intelligence, seamless communication and rapid 
                 response capabilities. Nations with advanced integrated defense systems have shown superior operational effectiveness, reduced 
-                casualties, and better resource utilization. India, as a rising global power with complex security challenges, needs such 
+                casualties and better resource utilization. India as a rising global power with complex security challenges, needs such 
                 systems to maintain its strategic advantage and protect its interests.
               </p>
 
               <h3 style={{color: '#9ACD32', fontSize: '22px', marginTop: '40px', marginBottom: '20px'}}>The AI Revolution in Defense</h3>
               <p className="problem-description">
-                Artificial Intelligence is revolutionizing every sector, and defense is no exception. AI can process vast amounts of data in 
-                seconds, identify patterns invisible to human analysts, predict potential threats, and automate routine tasks to free up human 
-                resources for critical decision-making. However, implementing AI in defense requires careful consideration of security, reliability, 
+                Artificial Intelligence is revolutionizing every sector and defense is no exception. AI can process vast amounts of data in 
+                seconds, identify patterns invisible to human analysts, predict potential threats and automate routine tasks to free up human 
+                resources for critical decision-making. However, implementing AI in defense requires careful consideration of security, reliability 
                 and ethical implications.
               </p>
 
@@ -224,7 +224,7 @@ const Mission: React.FC = () => {
               </p>
 
               <p className="problem-description">
-                The timing is perfect for this transformation. India has a thriving AI ecosystem, world-class technical talent, and a government 
+                The timing is perfect for this transformation. India has a thriving AI ecosystem, world-class technical talent and a government 
                 committed to digital transformation. By focusing on AI for defense, we're not just solving current problems but preparing for 
                 future challenges and opportunities.
               </p>
@@ -232,7 +232,7 @@ const Mission: React.FC = () => {
               <h3 style={{color: '#9ACD32', fontSize: '22px', marginTop: '40px', marginBottom: '20px'}}>Student Innovation Potential</h3>
               <p className="problem-description">
                 We specifically chose this problem statement for a student hackathon because it offers the perfect balance of complexity and 
-                accessibility. Students bring fresh perspectives, innovative thinking, and familiarity with cutting-edge technologies. They're 
+                accessibility. Students bring fresh perspectives, innovative thinking and familiarity with cutting-edge technologies. They're 
                 not constrained by existing systems or traditional approaches, allowing them to think outside the box and propose revolutionary 
                 solutions.
               </p>
@@ -245,7 +245,7 @@ const Mission: React.FC = () => {
 
               <p className="problem-description">
                 This problem statement also serves an educational purpose. It exposes students to real-world challenges, helps them understand 
-                the complexity of national security, and encourages them to think about how their technical skills can contribute to national 
+                the complexity of national security and encourages them to think about how their technical skills can contribute to national 
                 service. Many participants might discover a passion for defense technology and choose to pursue careers in this critical sector.
               </p>
 
@@ -253,7 +253,7 @@ const Mission: React.FC = () => {
               <p className="problem-description">
                 The solutions developed for defense applications often have broader societal benefits. GPS technology, originally developed for 
                 military use, now powers everything from ride-sharing apps to precision agriculture. Similarly, AI systems developed for defense 
-                can be adapted for disaster management, border security, cybersecurity, and public safety.
+                can be adapted for disaster management, border security, cybersecurity and public safety.
               </p>
 
               <p className="problem-description">
@@ -264,15 +264,15 @@ const Mission: React.FC = () => {
 
               <p className="problem-description">
                 Furthermore, this problem statement aligns with India's broader strategic goals: becoming a global technology leader, achieving 
-                self-reliance in defense (Atmanirbhar Bharat), and leveraging our demographic dividend. When students work on defense AI solutions, 
+                self-reliance in defense (Atmanirbhar Bharat) and leveraging our demographic dividend. When students work on defense AI solutions, 
                 they're contributing to all these national objectives while developing skills that will serve them throughout their careers.
               </p>
 
               <h3 style={{color: '#9ACD32', fontSize: '22px', marginTop: '40px', marginBottom: '20px'}}>The Urgency Factor</h3>
               <p className="problem-description">
-                The geopolitical landscape is rapidly evolving, and India faces complex security challenges on multiple fronts. Climate change 
-                is creating new types of conflicts, cyber threats are becoming more sophisticated, and emerging technologies are changing the 
-                nature of warfare. We cannot afford to wait for solutions to emerge gradually; we need accelerated innovation.
+                The geopolitical landscape is rapidly evolving and India faces complex security challenges on multiple fronts. Climate change 
+                is creating new types of conflicts, cyber threats are becoming more sophisticated and emerging technologies are changing the 
+                nature of warfare. We cannot afford to wait for solutions to emerge gradually, we need accelerated innovation.
               </p>
 
               <p className="problem-description">
@@ -340,72 +340,7 @@ const Mission: React.FC = () => {
           </div>
         </section>
 
-        {/* Evaluation Criteria */}
-        <section className="mission-section">
-          <div className="section-header">
-            <Award className="section-icon" />
-            <h2 className="section-title">Evaluation Criteria</h2>
-          </div>
-          <div className="content-card">
-            <div className="criteria-intro">
-              <p style={{fontSize: '16px', color: '#cccccc', marginBottom: '30px'}}>Solutions will be evaluated by a panel of defense experts, technology leaders, and academic professionals based on the following criteria:</p>
-            </div>
-            
-            <div className="criteria-breakdown">
-              <div className="criteria-item">
-                <div className="criteria-weight">25%</div>
-                <div className="criteria-details">
-                  <h4>Innovation & Creativity</h4>
-                  <p>Uniqueness of approach, creative problem-solving, and novel use of technology</p>
-                  <ul>
-                    <li>Original thinking and creative solutions</li>
-                    <li>Novel application of existing technologies</li>
-                    <li>Breakthrough innovations in defense technology</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="criteria-item">
-                <div className="criteria-weight">25%</div>
-                <div className="criteria-details">
-                  <h4>Technical Feasibility</h4>
-                  <p>Practicality, implementability, and technical soundness of the solution</p>
-                  <ul>
-                    <li>Technical architecture and design quality</li>
-                    <li>Scalability and performance considerations</li>
-                    <li>Implementation complexity and resource requirements</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="criteria-item">
-                <div className="criteria-weight">25%</div>
-                <div className="criteria-details">
-                  <h4>Defense Relevance</h4>
-                  <p>Alignment with armed forces requirements and defense applications</p>
-                  <ul>
-                    <li>Understanding of defense challenges</li>
-                    <li>Relevance to military operations</li>
-                    <li>Potential for defense sector adoption</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="criteria-item">
-                <div className="criteria-weight">25%</div>
-                <div className="criteria-details">
-                  <h4>Real-world Impact</h4>
-                  <p>Potential for actual deployment, societal benefit, and long-term value</p>
-                  <ul>
-                    <li>Practical applicability and deployment potential</li>
-                    <li>Societal and national security benefits</li>
-                    <li>Sustainability and long-term viability</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Success Stories & Inspiration */}
         <section className="mission-section">
@@ -470,7 +405,7 @@ const Mission: React.FC = () => {
               </div>
               <div className="mission-stat">
                 <MapPin size={20} />
-                <span>NMIET, Bhubaneswar</span>
+                <span>NMIET Campus, Bhubaneswar</span>
               </div>
             </div>
           </div>

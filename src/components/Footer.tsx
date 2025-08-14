@@ -13,7 +13,7 @@ const Footer = () => {
               </h3>
               <p>Innovating for Defence. Building for Bharat.</p>
             </div>
-            
+
             <div className="footer-links">
               <div className="link-group">
                 <h4>Quick Links</h4>
@@ -22,46 +22,45 @@ const Footer = () => {
                 <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer">Register</a>
                 <a href="#contact">Contact</a>
               </div>
-              
+
               <div className="link-group">
                 <h4>Resources</h4>
-                <a href="#" target="_blank">Rules & Guidelines</a>
-                <a href="#" target="_blank">Pitch Deck Template</a>
-                <a href="#" target="_blank">Past Winners</a>
-                <a href="#" target="_blank">Mentors</a>
+                <a href="/details">Rules & Guidelines</a>
+                <a href="/mission">Mission Brief</a>
+                <a href="/team">Our Team</a>
               </div>
-              
+
               <div className="link-group">
                 <h4>Follow Us</h4>
                 <div className="social-links">
-                  <a href="#" className="social-link">
+                  <a href="https://twitter.com/nmiet_official" target="_blank" rel="noopener noreferrer" className="social-link">
                     <Twitter size={20} />
                   </a>
-                  <a href="#" className="social-link">
+                  <a href="https://www.instagram.com/nm.edcell?igsh=MXc2Nmg1YWxwd3B6YQ==" target="_blank" rel="noopener noreferrer" className="social-link">
                     <Instagram size={20} />
                   </a>
-                  <a href="#" className="social-link">
+                  <a href="https://www.instagram.com/nm.edcell?igsh=MXc2Nmg1YWxwd3B6YQ==" target="_blank" rel="noopener noreferrer" className="social-link">
                     <Linkedin size={20} />
                   </a>
-                  <a href="#" className="social-link">
+                  <a href="https://www.instagram.com/nm.edcell?igsh=MXc2Nmg1YWxwd3B6YQ==" target="_blank" rel="noopener noreferrer" className="social-link">
                     <Github size={20} />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="footer-bottom">
             <div className="footer-divider">
               <div className="saffron-line"></div>
               <div className="army-line"></div>
             </div>
-            
+
             <div className="footer-credits">
               <p>
-                Made with <Heart size={16} className="green-text" /> by NMIET Tech Club
+                Made with <Heart size={16} className="green-text" /> by NMIET’s Tech Club
               </p>
-              <p>© 2025 NMIET Hackathon Team. All rights reserved.</p>
+              <p>© 2025 NMIET’s Tech Club. All rights reserved.</p>
             </div>
           </div>
         </div>

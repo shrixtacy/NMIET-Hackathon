@@ -28,11 +28,26 @@ export const metadata: Metadata = {
   description: 'Join NMIET Inter-College AI Hackathon 2025 focused on Defence & Indian Military AI. Free registration, innovative for defence, building for Bharat.',
   keywords: 'AI Hackathon, Defence, Military, Innovation, NMIET, Inter-College, 2025',
   authors: [{ name: 'NMIET' }],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'NMIET Inter-College AI Hackathon 2025',
+    description: 'Defence & Military AI Innovation Hackathon',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NMIET Inter-College AI Hackathon 2025',
+    description: 'Defence & Military AI Innovation Hackathon',
+  },
 }
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1.0,
+  maximumScale: 5.0,
+  userScalable: true,
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({

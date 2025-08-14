@@ -4,7 +4,7 @@ import { Bell, Users2, BookOpen } from 'lucide-react';
 const Updates = () => {
   const updates = [
     { icon: Bell, text: "Registration Now Open", status: "active" },
-    { icon: Users2, text: "Mentors Announced Soon", status: "upcoming" },
+    { icon: Users2, text: "Mentors will be announced soon", status: "upcoming" },
     { icon: BookOpen, text: "Rules & Guidelines Updated", status: "new" }
   ];
 
@@ -15,7 +15,7 @@ const Updates = () => {
         <h2 className="military-heading section-title text-center">
           Latest <span className="green-text">Updates</span>
         </h2>
-        
+
         <div className="ticker-container">
           <div className="ticker-content">
             {updates.concat(updates).map((update, index) => (
@@ -31,7 +31,7 @@ const Updates = () => {
             ))}
           </div>
         </div>
-        
+
         <div className="updates-cards">
           {updates.map((update, index) => (
             <div key={index} className="update-card fade-in-up">

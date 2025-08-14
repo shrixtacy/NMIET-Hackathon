@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarDays, IndianRupee, CheckCircle2, Presentation, MapPin, Clock, Shield, Cpu, Users, Sparkles, Layers, Video, Target, Award, BookOpen, AlertTriangle, Zap, Coffee, Moon, Sun } from 'lucide-react';
+import { CheckCircle2, Presentation, MapPin, Clock, Shield, Cpu, Users, Sparkles, Layers, Video, Target, Award, BookOpen, AlertTriangle, Zap } from 'lucide-react';
 
 const Details: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Details: React.FC = () => {
         <div className="container">
           <h1 className="military-heading section-title">Guidelines & <span className="green-text">Information</span></h1>
           <p className="details-subtitle">Everything you need to know about DefenseHack 2025</p>
-          <p className="hero-description">Complete guide for participation, rules, and event information</p>
+          <p className="hero-description">Complete guide for participation, rules and event information</p>
 
           <div className="hero-highlights">
             <div className="highlight-item">
@@ -176,6 +176,73 @@ const Details: React.FC = () => {
           </div>
         </section>
 
+        {/* Detailed Evaluation Criteria */}
+        <section className="detailed-criteria-section">
+          <div className="section-header">
+            <Award className="section-icon" />
+            <h2 className="section-title">Final Evaluation Criteria</h2>
+          </div>
+          <div className="content-card">
+            <div className="criteria-intro">
+              <p style={{ fontSize: '16px', color: '#cccccc', marginBottom: '30px' }}>Solutions will be evaluated by a panel of defense experts, technology leaders and academic professionals based on the following criteria:</p>
+            </div>
+
+            <div className="criteria-breakdown">
+              <div className="criteria-item">
+                <div className="criteria-weight">25%</div>
+                <div className="criteria-details">
+                  <h4>Innovation & Creativity</h4>
+                  <p>Uniqueness of approach, creative problem-solving and novel use of technology</p>
+                  <ul>
+                    <li>Original thinking and creative solutions</li>
+                    <li>Novel application of existing technologies</li>
+                    <li>Breakthrough innovations in defense technology</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="criteria-item">
+                <div className="criteria-weight">25%</div>
+                <div className="criteria-details">
+                  <h4>Technical Feasibility</h4>
+                  <p>Practicality, implementability and technical soundness of the solution</p>
+                  <ul>
+                    <li>Technical architecture and design quality</li>
+                    <li>Scalability and performance considerations</li>
+                    <li>Implementation complexity and resource requirements</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="criteria-item">
+                <div className="criteria-weight">25%</div>
+                <div className="criteria-details">
+                  <h4>Defense Relevance</h4>
+                  <p>Alignment with armed forces requirements and defense applications</p>
+                  <ul>
+                    <li>Understanding of defense challenges</li>
+                    <li>Relevance to military operations</li>
+                    <li>Potential for defense sector adoption</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="criteria-item">
+                <div className="criteria-weight">25%</div>
+                <div className="criteria-details">
+                  <h4>Real-world Impact</h4>
+                  <p>Potential for actual deployment, societal benefit and long-term value</p>
+                  <ul>
+                    <li>Practical applicability and deployment potential</li>
+                    <li>Societal and national security benefits</li>
+                    <li>Sustainability and long-term viability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Venue & Logistics */}
         <section className="venue-section">
           <div className="section-header">
@@ -318,7 +385,7 @@ const Details: React.FC = () => {
               </div>
               <div className="judging-item">
                 <Target size={20} />
-                <span>Focus on idea quality, feasibility, and real-world impact</span>
+                <span>Focus on idea quality, feasibility and real-world impact</span>
               </div>
             </div>
           </div>
@@ -331,9 +398,9 @@ const Details: React.FC = () => {
             <h2 className="section-title">Prizes & Recognition</h2>
           </div>
           <div className="prizes-content">
-            <div className="prize-placeholder">
-              <h4>Prize Details Coming Soon!</h4>
-              <p>Exciting prizes and recognition await the winners. Stay tuned for updates.</p>
+            <div className="prize-info">
+              <h4>Recognition & Rewards</h4>
+              <p>Winners will receive certificates, recognition, and exciting prizes. Details will be announced during the event.</p>
             </div>
           </div>
         </section>
@@ -347,11 +414,11 @@ const Details: React.FC = () => {
           <div className="final-notes-content">
             <div className="note-item">
               <Sparkles size={20} />
-              <span>This is a collaborative, innovative, and learning-first hackathon</span>
+              <span>This is a collaborative, innovative and learning-first hackathon</span>
             </div>
             <div className="note-item">
               <Shield size={20} />
-              <span>Respect the schedule, venue rules, and fellow participants</span>
+              <span>Respect the schedule, venue rules and fellow participants</span>
             </div>
             <div className="note-item">
               <Users size={20} />

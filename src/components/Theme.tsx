@@ -12,7 +12,7 @@ const Theme = () => {
     {
       icon: Eye,
       title: "Surveillance & Reconnaissance",
-      description: "Create drone-based intelligence and real-time battlefield monitoring systems",
+      description: "Create advanced intelligence and real-time battlefield monitoring systems.",
       color: "army"
     },
     {
@@ -40,7 +40,7 @@ const Theme = () => {
           </h2>
           <div className="radar-scan-line"></div>
         </div>
-        
+
         <div className="theme-grid">
           {themeCards.map((card, index) => (
             <div key={index} className="theme-card fade-in-up glow-effect">
