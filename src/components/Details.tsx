@@ -1,3 +1,4 @@
+import React from 'react';
 import { CalendarDays, IndianRupee, CheckCircle2, Presentation, MapPin, Clock, Shield, Cpu, Users, Sparkles, Layers, Video, Target, Award, BookOpen, AlertTriangle, Zap, Coffee, Moon, Sun } from 'lucide-react';
 
 const Details: React.FC = () => {

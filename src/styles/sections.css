@@ -42,7 +42,7 @@
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .why-chosen-content h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 2rem;
   margin-bottom: 25px;
 }
 
@@ -609,7 +609,7 @@
 
 .visual-item {
   position: relative;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4 / 3;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -782,7 +782,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-  animation-delay: calc(var(--i) * 0.2s);
+  animation-delay: 0.2s;
 }
 
 .timeline-item:nth-child(even) {
@@ -1397,8 +1397,8 @@
     grid-template-columns: 1fr;
   }
 }
-/* Hero S
-ection Updates */
+
+/* Hero Section Updates */
 .hero-description {
   font-size: 16px;
   color: var(--color-light-grey);

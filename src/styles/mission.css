@@ -15,7 +15,7 @@
 
 .mission-hero h1 {
   font-family: 'Courier New', monospace;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
