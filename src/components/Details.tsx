@@ -6,18 +6,18 @@ const Details: React.FC = () => {
       {/* Hero Section */}
       <div className="details-hero">
         <div className="container">
-          <h1 className="military-heading section-title">DefenseHack 2025: <span className="green-text">AI for Armed Forces</span></h1>
-          <p className="details-subtitle">No fees. No limits. Just innovation.</p>
-          <p className="hero-description">Design a scalable, secure, and intelligent digital ecosystem for the Indian Armed Forces</p>
+          <h1 className="military-heading section-title">Guidelines & <span className="green-text">Information</span></h1>
+          <p className="details-subtitle">Everything you need to know about DefenseHack 2025</p>
+          <p className="hero-description">Complete guide for participation, rules, and event information</p>
 
           <div className="hero-highlights">
             <div className="highlight-item">
-              <Sparkles size={20} />
-              <span>Free to Participate</span>
+              <BookOpen size={20} />
+              <span>Complete Guidelines</span>
             </div>
             <div className="highlight-item">
               <Clock size={20} />
-              <span>48 Hours</span>
+              <span>24hrs Hackathon</span>
             </div>
             <div className="highlight-item">
               <Cpu size={20} />
@@ -32,63 +32,6 @@ const Details: React.FC = () => {
       </div>
 
       <div className="container">
-        {/* Key Dates Timeline */}
-        <section className="timeline-section">
-          <div className="section-header">
-            <CalendarDays className="section-icon" />
-            <h2 className="section-title">Key Dates</h2>
-          </div>
-          <div className="timeline-horizontal">
-            <div className="timeline-item">
-              <div className="timeline-date">15 Aug 2025</div>
-              <div className="timeline-event">Registration Opens</div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-date">10 Sep 2025</div>
-              <div className="timeline-event">Registration Closes</div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-date">15 Sep 2025</div>
-              <div className="timeline-event">Shortlisted Teams Announced</div>
-            </div>
-            <div className="timeline-item critical">
-              <div className="timeline-date">19-20 Sep 2025</div>
-              <div className="timeline-event">In-Person Hackathon Days</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Challenge Theme */}
-        <section className="theme-section">
-          <div className="section-header">
-            <Target className="section-icon" />
-            <h2 className="section-title">Challenge Theme</h2>
-          </div>
-          <div className="theme-content">
-            <div className="theme-main">
-              <h3>Mission Objective</h3>
-              <p>Design a scalable, secure, and intelligent digital ecosystem that can assist the Indian Armed Forces in:</p>
-              <div className="objective-grid">
-                <div className="objective-item">
-                  <Shield size={24} />
-                  <span>Real-time Surveillance</span>
-                </div>
-                <div className="objective-item">
-                  <Users size={24} />
-                  <span>Secure Communication</span>
-                </div>
-                <div className="objective-item">
-                  <AlertTriangle size={24} />
-                  <span>Threat Detection</span>
-                </div>
-                <div className="objective-item">
-                  <Cpu size={24} />
-                  <span>Soldier Support in High-Risk Zones</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Registration Process */}
         <section className="registration-section">
@@ -318,7 +261,7 @@ const Details: React.FC = () => {
                   <span className="op-name">Overnight Hacking Begins</span>
                 </div>
                 <div className="operation-item">
-                  <span className="op-time">12:00 AM – 8:00 AM</span>
+                  <span className="op-time">12:00 AM – 6:00 AM</span>
                   <span className="op-name">Continuous Hacking</span>
                 </div>
               </div>
@@ -336,8 +279,8 @@ const Details: React.FC = () => {
                   <span className="op-name">Breakfast</span>
                 </div>
                 <div className="operation-item critical">
-                  <span className="op-time">8:30 AM – 9:30 AM</span>
-                  <span className="op-name">Submission Deadline</span>
+                  <span className="op-time">11:00 AM</span>
+                  <span className="op-name">Submission Deadline (24hrs Complete)</span>
                 </div>
                 <div className="operation-item">
                   <span className="op-time">10:00 AM – 1:00 PM</span>

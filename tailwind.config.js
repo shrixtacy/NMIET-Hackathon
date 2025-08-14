@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'military': ['var(--font-oswald)', 'Oswald', 'sans-serif'],
-        'body': ['var(--font-inter)', 'Inter', 'sans-serif'],
+        'body': ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
+        'secondary': ['var(--font-inter)', 'Inter', 'sans-serif'],
       },
     },
   },

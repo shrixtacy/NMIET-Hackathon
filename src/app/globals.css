@@ -25,7 +25,8 @@
   --color-dark-grey: #333333;
   --color-medium-grey: #666666;
   --font-military: var(--font-oswald), 'Oswald', sans-serif;
-  --font-body: var(--font-inter), 'Inter', sans-serif;
+  --font-body: var(--font-montserrat), 'Montserrat', sans-serif;
+  --font-secondary: var(--font-inter), 'Inter', sans-serif;
   --font-monospace: 'Courier New', monospace;
   
   /* Team component variables */
@@ -191,4 +192,149 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
   }
+}/
+* Enhanced Typography */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+/* Improved paragraph styling */
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced list styling */
+li {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.5rem;
+}
+
+/* Better button text */
+.army-button {
+  font-family: var(--font-military);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* Enhanced card text */
+.card-text, .about-description, .challenge-context, .challenge-need {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+/* Improved form styling */
+input, textarea {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* Enhanced navigation text */
+.nav-command {
+  font-family: var(--font-monospace);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Better subtitle styling */
+.hero-subtitle, .details-subtitle {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Enhanced description text */
+.hero-description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+/* Improved contact information */
+.contact-link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* Better coordinator names */
+.coordinator-name {
+  font-family: var(--font-military);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Enhanced role text */
+.coordinator-role {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+/* Improved timeline text */
+.timeline-event, .op-name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+/* Better FAQ text */
+.question-text {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.faq-answer p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+/* Enhanced feature descriptions */
+.feature-item p, .objective-item p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* Better team member text */
+.member-contribution {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* Improved guideline text */
+.guideline-category ul li {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* Enhanced criteria descriptions */
+.criteria-card p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
 }

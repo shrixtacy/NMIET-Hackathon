@@ -6,7 +6,6 @@ import Timeline from './Timeline';
 import Registration from './Registration';
 import Updates from './Updates';
 import FAQ from './FAQ';
-import Contact from './Contact';
 
 const Home: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const Home: React.FC = () => {
       <Registration />
       <Updates />
       <FAQ />
-      <Contact />
     </>
   );
 };
