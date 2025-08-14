@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Terminal, Shield } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -20,18 +22,18 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'MISSION', href: '/mission' },
-    { name: 'OBJECTIVES', href: '/details' },
-    { name: 'TIMELINE', href: '#timeline' },
+    { name: 'GUIDELINES', href: '/details' },
+    { name: 'TIMELINE', href: pathname === '/' ? '#timeline' : '/#timeline' },
     { name: 'REGISTER', href: 'https://forms.gle/k9WmRjaxUubhgcPH9' },
     { name: 'OUR TEAM', href: '/team' },
-    { name: 'CONTACT', href: '#contact' }
+    { name: 'CONTACT', href: '/contact' }
   ];
 
   return (
     <nav className={`terminal-navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link href="/" className="navbar-brand">
-          <Terminal className="brand-icon" size={24} />
+          <Terminal className="brand-icon" size={32} />
           <span className="brand-text">
             <span className="brand-main">NMIET</span>
             <span className="brand-sub">HACKATHON_2025</span>

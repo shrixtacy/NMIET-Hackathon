@@ -11,11 +11,7 @@ const Mission: React.FC = () => {
           <h1>
             Mission Briefing: <span style={{color: '#9ACD32'}}>DefenseHack 2025</span>
           </h1>
-          <p className="mission-subtitle">AI for Armed Forces - A National Security Innovation Challenge</p>
-          <div className="mission-classification">
-            <Shield size={20} />
-            <span>CLASSIFICATION: OPEN SOURCE INNOVATION</span>
-          </div>
+
         </div>
       </div>
 
@@ -101,26 +97,26 @@ const Mission: React.FC = () => {
 
             <div className="secondary-objectives">
               <h3 style={{color: '#9ACD32', fontSize: '20px', marginTop: '30px'}}>Secondary Objectives</h3>
-              <div className="objectives-list">
+              <div className="objectives-grid">
                 <div className="objective-item">
-                  <CheckCircle2 size={20} />
-                  <span>Enhance operational efficiency through AI-driven automation</span>
+                  <CheckCircle2 size={18} />
+                  <span>AI-Driven Automation</span>
                 </div>
                 <div className="objective-item">
-                  <CheckCircle2 size={20} />
-                  <span>Improve decision-making with real-time data analytics</span>
+                  <CheckCircle2 size={18} />
+                  <span>Real-Time Analytics</span>
                 </div>
                 <div className="objective-item">
-                  <CheckCircle2 size={20} />
-                  <span>Strengthen national security through innovative technology</span>
+                  <CheckCircle2 size={18} />
+                  <span>Innovative Technology</span>
                 </div>
                 <div className="objective-item">
-                  <CheckCircle2 size={20} />
-                  <span>Create cost-effective solutions for defense applications</span>
+                  <CheckCircle2 size={18} />
+                  <span>Cost-Effective Solutions</span>
                 </div>
                 <div className="objective-item">
-                  <CheckCircle2 size={20} />
-                  <span>Foster collaboration between academia and defense sector</span>
+                  <CheckCircle2 size={18} />
+                  <span>Academia-Defense Collaboration</span>
                 </div>
               </div>
             </div>

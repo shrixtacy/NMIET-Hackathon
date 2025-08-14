@@ -1,7 +1,7 @@
-@import url('../styles/hero.css');
-@import url('../styles/sections.css');
-@import url('../styles/navbar.css');
-@import url('../styles/team.css');
+@import '../styles/hero.css';
+@import '../styles/sections.css';
+@import '../styles/navbar.css';
+@import '../styles/team.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,7 +25,8 @@
   --color-dark-grey: #333333;
   --color-medium-grey: #666666;
   --font-military: var(--font-oswald), 'Oswald', sans-serif;
-  --font-body: var(--font-inter), 'Inter', sans-serif;
+  --font-body: var(--font-montserrat), 'Montserrat', sans-serif;
+  --font-secondary: var(--font-inter), 'Inter', sans-serif;
   --font-monospace: 'Courier New', monospace;
   
   /* Team component variables */
