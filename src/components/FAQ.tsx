@@ -21,11 +21,11 @@ const FAQ = () => {
     },
     {
       question: "What themes should our project focus on?",
-      answer: "Focus on Defence & Military AI including: Military Strategy AI, Surveillance & Reconnaissance, Cybersecurity & Warfare, and Disaster Response AI."
+      answer: "Focus on Defence & Military AI including: Military Strategy AI, Surveillance & Reconnaissance, Cybersecurity & Warfare and Disaster Response AI."
     },
     {
       question: "What are the prizes and recognition?",
-      answer: "Winners receive cash prizes, certificates, internship opportunities, and mentorship from defence technology experts."
+      answer: "Winners receive cash prizes, certificates, internship opportunities and mentorship from defence technology experts."
     },
     {
       question: "Do we need prior AI/ML experience?",

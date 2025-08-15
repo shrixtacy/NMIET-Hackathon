@@ -43,17 +43,17 @@
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 85px;
   transition: all 0.3s ease;
 }
 
 .terminal-navbar.scrolled .navbar-container {
-  height: 65px;
-  padding: 0 30px;
+  height: 75px;
+  padding: 0 35px;
 }
 
 .navbar-brand {
@@ -69,11 +69,21 @@
 
 .navbar-brand:hover {
   color: var(--color-light-green);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .navbar-brand:hover .brand-icon {
-  filter: drop-shadow(0 0 8px var(--color-light-green));
+  filter: drop-shadow(0 0 15px var(--color-light-green));
+}
+
+.navbar-brand:hover .brand-main {
+  text-shadow: 0 0 20px rgba(154, 205, 50, 0.8);
+  letter-spacing: 4px;
+}
+
+.navbar-brand:hover .brand-sub {
+  text-shadow: 0 0 15px rgba(154, 205, 50, 0.6);
+  letter-spacing: 3px;
 }
 
 .terminal-navbar.scrolled .navbar-brand {
@@ -105,26 +115,32 @@
 }
 
 .brand-main {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 4px;
   transition: all 0.3s ease;
+  text-shadow: 0 0 15px rgba(128, 128, 0, 0.6);
+  text-transform: uppercase;
 }
 
 .terminal-navbar.scrolled .brand-main {
-  font-size: 18px;
+  font-size: 28px;
+  text-shadow: 0 0 20px rgba(128, 128, 0, 0.8);
 }
 
 .brand-sub {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  opacity: 0.9;
   transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(128, 128, 0, 0.5);
+  text-transform: uppercase;
 }
 
 .terminal-navbar.scrolled .brand-sub {
-  font-size: 9px;
+  font-size: 14px;
+  text-shadow: 0 0 15px rgba(128, 128, 0, 0.7);
 }
 
 .desktop-menu {
@@ -224,11 +240,14 @@
   right: 0;
   background: rgba(0, 0, 0, 0.95);
   border-bottom: 2px solid var(--color-army-green);
-  transform: translateY(-100%);
+  transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .terminal-navbar.scrolled .mobile-menu {
@@ -242,7 +261,8 @@
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-  box-shadow: 0 8px 32px rgba(128, 128, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(128, 128, 0, 0.3);
+  max-height: 400px;
 }
 
 .mobile-menu-content {
@@ -250,6 +270,9 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav-link {
@@ -313,14 +336,16 @@
   
   .mobile-menu-toggle {
     display: block;
+    z-index: 1001;
+    position: relative;
   }
   
   .navbar-container {
-    height: 60px;
+    height: 70px;
   }
   
   .terminal-navbar.scrolled .navbar-container {
-    height: 55px;
+    height: 65px;
   }
   
   .terminal-navbar.scrolled {
@@ -329,20 +354,62 @@
     right: 10px;
   }
   
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .terminal-navbar.scrolled .mobile-menu {
+    margin: 0 10px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
+  
+  .mobile-menu-content {
+    padding: 15px;
+    gap: 12px;
+    max-height: 400px;
+  }
+  
+  .mobile-nav-link {
+    font-size: 15px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-nav-link:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
   .brand-main {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
   }
   
   .brand-sub {
-    font-size: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
   }
   
   .terminal-navbar.scrolled .brand-main {
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 2px;
   }
   
   .terminal-navbar.scrolled .brand-sub {
-    font-size: 8px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -362,10 +429,46 @@
   }
   
   .brand-main {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
   }
   
   .terminal-navbar.scrolled .brand-main {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
   }
+}
+
+/* Touch-friendly mobile menu */
+@media (hover: none) and (pointer: coarse) {
+  .mobile-nav-link {
+    min-height: 52px;
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+  
+  .mobile-menu-toggle {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px;
+  }
+  
+  .mobile-nav-link:hover {
+    transform: none;
+  }
+  
+  .mobile-nav-link:active {
+    background: rgba(128, 128, 0, 0.25);
+    transform: scale(0.98);
+  }
+}
+
+/* Simplified mobile menu - no interference with page content */
+.mobile-menu {
+  pointer-events: auto;
+}
+
+.mobile-menu:not(.open) {
+  pointer-events: none;
 }

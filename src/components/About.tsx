@@ -26,10 +26,10 @@ const About = () => {
             </h2>
             <div className="about-description-box">
               <p className="about-main-text">
-                Design a <span className="green-text">scalable, secure, and intelligent digital ecosystem</span> that can assist the Indian Armed Forces in real-time surveillance, secure communication, threat detection, and soldier support in high-risk zones.
+                Design a <span className="green-text">scalable, secure and intelligent digital ecosystem</span> that can assist the Indian Armed Forces in real-time surveillance, secure communication, threat detection and soldier support in high-risk zones.
               </p>
               <p className="about-participation">
-                Build <span className="green-text">AI-powered solutions</span> that enhance military operations, protect our borders, and ensure the safety of our Armed Forces in critical missions.
+                Build <span className="green-text">AI-powered solutions</span> that enhance military operations, protect our borders and ensure the safety of our Armed Forces in critical missions.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const About = () => {
             </h3>
             <div className="why-content-box">
               <p className="why-description">
-                India's national security is at a crucial point, with rising tensions from neighboring countries and increasing threats from cross-border infiltration, terrorism, and cyber warfare.
+                India's national security is at a crucial point with rising tensions from neighboring countries and increasing threats from cross-border infiltration, terrorism and cyber warfare.
               </p>
               <p className="why-need">
                 Our Armed Forces need next-generation technology that not only reacts to threats but anticipates them. This hackathon aims to build solutions that strengthen our nation's defense capabilities.

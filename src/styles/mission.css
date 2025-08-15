@@ -310,7 +310,7 @@
 /* Innovation Areas */
 .innovation-areas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin-top: 30px;
 }
@@ -590,10 +590,14 @@
   
   .areas-grid,
   .deliverables-grid,
-  .innovation-areas,
   .success-examples,
   .objectives-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .innovation-areas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   
   .criteria-item {
@@ -634,5 +638,455 @@
   
   .cta-content h3 {
     font-size: 24px;
+  }
+  
+  .innovation-areas {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+/* Com
+prehensive Responsive Design for Mission Page */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .challenge-stats {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 25px;
+  }
+  
+  .mission-hero {
+    padding: 90px 0 50px;
+  }
+  
+  .mission-hero h1 {
+    font-size: 3.5rem;
+  }
+  
+  .mission-section {
+    padding: 50px 0;
+  }
+  
+  .content-card {
+    padding: 30px 25px;
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .objectives-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .innovation-areas {
+    gap: 25px;
+  }
+  
+  .success-examples {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .mission-hero {
+    padding: 80px 0 40px;
+  }
+  
+  .mission-hero h1 {
+    font-size: clamp(2.5rem, 8vw, 3rem);
+    line-height: 1.1;
+  }
+  
+  .mission-subtitle {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .mission-classification {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  .mission-section {
+    padding: 40px 0;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  
+  .content-card {
+    padding: 25px 20px;
+    margin-bottom: 25px;
+  }
+  
+  .problem-overview h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .problem-description {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .challenge-stats {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .stat-item {
+    padding: 15px 10px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+  
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .area-card {
+    padding: 20px 15px;
+    text-align: center;
+  }
+  
+  .area-card h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .area-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .objective-item {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .innovation-areas {
+    gap: 20px;
+  }
+  
+  .innovation-area {
+    padding: 20px 15px;
+  }
+  
+  .innovation-area h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .innovation-area ul {
+    padding-left: 20px;
+  }
+  
+  .innovation-area li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .success-examples {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .example-card {
+    padding: 20px 15px;
+  }
+  
+  .example-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .example-card p {
+    font-size: 14px;
+  }
+  
+  .mission-cta-section {
+    padding: 40px 0;
+  }
+  
+  .cta-content {
+    padding: 30px 20px;
+  }
+  
+  .cta-content h3 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    text-align: center;
+  }
+  
+  .cta-content p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cta-buttons .army-button,
+  .cta-buttons .learn-more-btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mission-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .mission-stat {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .mission-hero {
+    padding: 70px 0 30px;
+  }
+  
+  .mission-hero h1 {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+  }
+  
+  .mission-subtitle {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+  
+  .mission-classification {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+  
+  .mission-section {
+    padding: 35px 0;
+  }
+  
+  .section-title {
+    font-size: clamp(1.3rem, 7vw, 1.8rem);
+  }
+  
+  .content-card {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .problem-overview h3 {
+    font-size: 18px;
+  }
+  
+  .problem-description {
+    font-size: 15px;
+  }
+  
+  .challenge-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .stat-item {
+    padding: 12px 8px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 11px;
+  }
+  
+  .area-card {
+    padding: 18px 12px;
+  }
+  
+  .area-card svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .area-card h4 {
+    font-size: 16px;
+  }
+  
+  .area-card p {
+    font-size: 13px;
+  }
+  
+  .objective-item {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .innovation-area {
+    padding: 18px 12px;
+  }
+  
+  .innovation-area h4 {
+    font-size: 16px;
+  }
+  
+  .innovation-area li {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  .example-card {
+    padding: 18px 12px;
+  }
+  
+  .example-card h4 {
+    font-size: 15px;
+  }
+  
+  .example-card p {
+    font-size: 13px;
+  }
+  
+  .cta-content {
+    padding: 25px 15px;
+  }
+  
+  .cta-content h3 {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+  }
+  
+  .cta-content p {
+    font-size: 15px;
+  }
+  
+  .mission-stat {
+    font-size: 14px;
+  }
+  
+  .mission-stat svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .mission-hero {
+    padding: 60px 0 25px;
+  }
+  
+  .mission-hero h1 {
+    font-size: clamp(1.8rem, 12vw, 2.2rem);
+  }
+  
+  .mission-subtitle {
+    font-size: 14px;
+  }
+  
+  .mission-section {
+    padding: 30px 0;
+  }
+  
+  .content-card {
+    padding: 15px 10px;
+  }
+  
+  .section-title {
+    font-size: clamp(1.2rem, 8vw, 1.6rem);
+  }
+  
+  .problem-overview h3 {
+    font-size: 16px;
+  }
+  
+  .problem-description {
+    font-size: 14px;
+  }
+  
+  .challenge-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .stat-item {
+    padding: 10px 6px;
+  }
+  
+  .area-card {
+    padding: 15px 10px;
+  }
+  
+  .innovation-area {
+    padding: 15px 10px;
+  }
+  
+  .example-card {
+    padding: 15px 10px;
+  }
+  
+  .cta-content {
+    padding: 20px 10px;
+  }
+  
+  .mission-classification {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 }

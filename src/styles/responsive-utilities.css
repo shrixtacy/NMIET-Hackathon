@@ -1,0 +1,361 @@
+/* Responsive Utilities for NMIET Hackathon Website */
+
+/* Responsive Typography */
+.responsive-title {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1.2;
+}
+
+.responsive-subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.4;
+}
+
+.responsive-text {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+}
+
+/* Responsive Spacing */
+.responsive-padding {
+  padding: clamp(20px, 5vw, 40px);
+}
+
+.responsive-margin {
+  margin: clamp(15px, 4vw, 30px) 0;
+}
+
+.responsive-gap {
+  gap: clamp(10px, 3vw, 25px);
+}
+
+/* Responsive Containers */
+.responsive-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(10px, 4vw, 30px);
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: clamp(15px, 4vw, 30px);
+}
+
+.responsive-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(10px, 3vw, 20px);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Cards */
+.responsive-card {
+  padding: clamp(15px, 4vw, 30px);
+  border-radius: clamp(8px, 2vw, 15px);
+  margin-bottom: clamp(15px, 3vw, 25px);
+}
+
+/* Responsive Buttons */
+.responsive-button {
+  padding: clamp(10px, 2.5vw, 15px) clamp(20px, 5vw, 30px);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  border-radius: clamp(5px, 1.5vw, 8px);
+  min-height: 44px; /* Touch target minimum */
+}
+
+/* Responsive Images */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.responsive-icon {
+  width: clamp(20px, 5vw, 40px);
+  height: clamp(20px, 5vw, 40px);
+}
+
+/* Responsive Navigation */
+.responsive-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(10px, 3vw, 25px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsive Forms */
+.responsive-form-group {
+  margin-bottom: clamp(15px, 3vw, 25px);
+}
+
+.responsive-input {
+  width: 100%;
+  padding: clamp(10px, 2.5vw, 15px);
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  border-radius: clamp(4px, 1vw, 8px);
+  min-height: 44px; /* Touch target minimum */
+}
+
+/* Responsive Tables */
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-table table {
+  min-width: 600px;
+  width: 100%;
+}
+
+/* Responsive Visibility */
+.hide-mobile {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.hide-tablet {
+  display: block;
+}
+
+.show-tablet {
+  display: none;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
+}
+
+/* Breakpoint-specific visibility */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+  
+  .show-mobile-flex {
+    display: flex !important;
+  }
+  
+  .show-mobile-grid {
+    display: grid !important;
+  }
+  
+  /* Mobile-specific adjustments */
+  .responsive-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .responsive-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .responsive-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hide-tablet {
+    display: none !important;
+  }
+  
+  .show-tablet {
+    display: block !important;
+  }
+  
+  .show-tablet-flex {
+    display: flex !important;
+  }
+  
+  .show-tablet-grid {
+    display: grid !important;
+  }
+  
+  /* Tablet-specific adjustments */
+  .responsive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide-desktop {
+    display: none !important;
+  }
+  
+  .show-desktop {
+    display: block !important;
+  }
+  
+  .show-desktop-flex {
+    display: flex !important;
+  }
+  
+  .show-desktop-grid {
+    display: grid !important;
+  }
+}
+
+/* Responsive Text Alignment */
+.text-center-mobile {
+  text-align: left;
+}
+
+.text-left-mobile {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .text-left-mobile {
+    text-align: left !important;
+  }
+}
+
+/* Responsive Overflow */
+.responsive-overflow {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive Aspect Ratios */
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+/* Fallback for browsers that don't support aspect-ratio */
+@supports not (aspect-ratio: 1 / 1) {
+  .aspect-ratio-16-9 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  
+  .aspect-ratio-4-3 {
+    position: relative;
+    padding-bottom: 75%; /* 4:3 */
+    height: 0;
+  }
+  
+  .aspect-ratio-1-1 {
+    position: relative;
+    padding-bottom: 100%; /* 1:1 */
+    height: 0;
+  }
+  
+  .aspect-ratio-16-9 > *,
+  .aspect-ratio-4-3 > *,
+  .aspect-ratio-1-1 > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Responsive Focus States */
+@media (hover: hover) and (pointer: fine) {
+  .responsive-hover:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .responsive-button,
+  .responsive-input,
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .responsive-hover:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .responsive-container {
+    max-width: none;
+    padding: 0;
+  }
+  
+  .responsive-card {
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+}
+
+/* High DPI / Retina Display Adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-icon {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .responsive-hover,
+  .responsive-button,
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .responsive-card {
+    background-color: var(--color-card-bg, #1a1a1a);
+    color: var(--color-white, #ffffff);
+  }
+}
+
+/* High Contrast Support */
+@media (prefers-contrast: high) {
+  .responsive-button {
+    border: 2px solid currentColor;
+  }
+  
+  .responsive-card {
+    border: 1px solid currentColor;
+  }
+}

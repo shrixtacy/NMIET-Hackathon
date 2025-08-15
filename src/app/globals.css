@@ -2,6 +2,7 @@
 @import '../styles/sections.css';
 @import '../styles/navbar.css';
 @import '../styles/team.css';
+@import '../styles/responsive-utilities.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -167,7 +168,29 @@ body {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  
+  .section-padding {
+    padding: 70px 0;
+  }
+  
+  .military-heading {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
@@ -178,18 +201,62 @@ body {
   }
   
   .military-heading {
-    font-size: 24px;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    text-align: center;
   }
   
   .army-button {
     padding: 12px 24px;
     font-size: 14px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+  
+  .green-text {
+    display: block;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .section-padding {
+    padding: 50px 0;
+  }
+  
   .military-heading {
-    font-size: 20px;
+    font-size: clamp(1.2rem, 7vw, 1.8rem);
     letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .army-button {
+    padding: 10px 20px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 8px;
+  }
+  
+  .section-padding {
+    padding: 40px 0;
+  }
+  
+  .military-heading {
+    font-size: clamp(1rem, 8vw, 1.5rem);
+    letter-spacing: 0.5px;
+  }
+  
+  .army-button {
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }

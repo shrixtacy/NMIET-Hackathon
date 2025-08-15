@@ -93,37 +93,133 @@
   box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2);
 }
 
-.member-image {
-  position: relative;
-  width: 120px;
-  height: 120px;
+/* Member Avatar Styles (Fallback) */
+.member-avatar {
+  width: 100px;
+  height: 100px;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
-  overflow: hidden;
+  background: rgba(0, 255, 0, 0.1);
   border: 3px solid var(--accent-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.member-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.member-overlay {
+.member-avatar::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 255, 0, 0.1);
+  background: linear-gradient(135deg, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0.05) 100%);
+  border-radius: 50%;
+}
+
+.member-avatar svg {
+  color: var(--accent-green);
+  z-index: 1;
+}
+
+.member-initials {
+  color: var(--accent-green);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-military);
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.team-member-card:hover .member-avatar {
+  background: rgba(0, 255, 0, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.team-member-card:hover .member-avatar::before {
+  background: linear-gradient(135deg, rgba(0, 255, 0, 0.2) 0%, rgba(0, 255, 0, 0.1) 100%);
+}
+
+/* Photo Container Styles */
+.member-photo-container {
+  margin-bottom: 1.5rem;
   display: flex;
+  justify-content: center;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-bright-green);
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 65, 0.3);
+}
+
+.member-photo:hover {
+  transform: scale(1.05);
+  border-color: var(--color-lime-accent);
+  box-shadow: 0 6px 20px rgba(0, 255, 65, 0.5);
+}
+
+.member-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.3rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.member-image:hover .member-overlay {
+.photo-overlay svg {
+  color: var(--accent-green);
+}
+
+.photo-initials {
+  color: var(--accent-green);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-military);
+  letter-spacing: 1px;
+}
+
+.team-member-card:hover .member-photo {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.team-member-card:hover .member-photo img {
+  transform: scale(1.1);
+}
+
+.team-member-card:hover .photo-overlay {
   opacity: 1;
 }
 
@@ -328,30 +424,244 @@
   font-size: 1.1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Enhanced Responsive Design */
+@media (max-width: 1024px) {
   .core-team-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .volunteer-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
   }
   
   .volunteers-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
   
   .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-hero {
+    padding: 3rem 0 1.5rem;
+  }
+  
+  .core-team-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   
   .team-member-card {
     padding: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
-  .member-image {
+  .member-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .member-photo {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .volunteer-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .volunteers-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  
+  .volunteer-card {
+    padding: 0.8rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .value-card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .volunteers-section {
+    padding: 2rem 0;
+  }
+  
+  .team-values-section {
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-hero {
+    padding: 2.5rem 0 1rem;
+  }
+  
+  .team-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  
+  .core-team-grid {
+    gap: 1.5rem;
+  }
+  
+  .team-member-card {
+    padding: 1.2rem;
+  }
+  
+  .member-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .member-photo {
     width: 100px;
     height: 100px;
+  }
+  
+  .member-initials {
+    font-size: 0.9rem;
+  }
+  
+  .member-name {
+    font-size: 1.3rem;
+  }
+  
+  .member-role {
+    font-size: 1rem;
+  }
+  
+  .member-contribution {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .skill-tag {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .volunteers-grid {
+    gap: 0.6rem;
+  }
+  
+  .volunteer-card {
+    padding: 0.7rem;
+  }
+  
+  .volunteer-avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+  
+  .volunteer-name {
+    font-size: 0.9rem;
+  }
+  
+  .values-grid {
+    gap: 1.2rem;
+  }
+  
+  .value-card {
+    padding: 1.2rem;
+  }
+  
+  .value-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .value-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .team-hero {
+    padding: 2rem 0 0.8rem;
+  }
+  
+  .team-member-card {
+    padding: 1rem;
+  }
+  
+  .member-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .member-photo {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+  }
+  
+  .member-role {
+    font-size: 0.95rem;
+  }
+  
+  .member-contribution {
+    font-size: 0.85rem;
+  }
+  
+  .skill-tag {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .volunteer-card {
+    padding: 0.6rem;
+  }
+  
+  .volunteer-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+  
+  .volunteer-name {
+    font-size: 0.85rem;
+  }
+  
+  .value-card {
+    padding: 1rem;
+  }
+  
+  .value-card svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .value-card h4 {
+    font-size: 1rem;
+  }
+  
+  .value-card p {
+    font-size: 0.85rem;
   }
 }
