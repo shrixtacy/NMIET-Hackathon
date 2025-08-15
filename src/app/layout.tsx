@@ -8,12 +8,14 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
+  preload: true,
 })
 
 const oswald = Oswald({ 
   subsets: ['latin'],
   variable: '--font-oswald',
   display: 'swap',
+  preload: true,
 })
 
 const montserrat = Montserrat({
@@ -21,6 +23,7 @@ const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-montserrat',
   display: 'swap',
+  preload: true,
 })
 
 export const metadata: Metadata = {
@@ -48,6 +51,7 @@ export const viewport = {
   maximumScale: 5.0,
   userScalable: true,
   viewportFit: 'cover',
+  themeColor: '#000000',
 }
 
 export default function RootLayout({
@@ -60,6 +64,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className={`${inter.variable} ${oswald.variable} ${montserrat.variable}`}>
         <div className="App">

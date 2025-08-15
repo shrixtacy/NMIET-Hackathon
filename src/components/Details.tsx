@@ -8,8 +8,8 @@ const Details: React.FC = () => {
       <div className="details-hero">
         <div className="container">
           <h1 className="military-heading section-title">Guidelines & <span className="green-text">Information</span></h1>
-          <p className="details-subtitle">Everything you need to know about DefenseHack 2025</p>
-          <p className="hero-description">Complete guide for participation, rules and event information</p>
+          <p className="details-subtitle" style={{ textAlign: 'center' }}>Everything you need to know about Nextech 1.0 2025</p>
+          <p className="hero-description" style={{ textAlign: 'center' }}>Complete guide for participation, rules and event information</p>
 
           <div className="hero-highlights">
             <div className="highlight-item">
