@@ -10,7 +10,7 @@ const Team: React.FC = () => {
       role: "Event Mastermind",
       contribution: "The driving force behind every performance and guest session. From the first spotlight to the final applause, ensures every moment is perfectly timed, flawlessly executed, and unforgettable.",
       skills: ["Event Flow Architect", "Performance Maestro"],
-      image: null
+      image: "/images/team/shriyansh-das.jpg"
     },
     {
       name: "Om prakash Nahak",
