@@ -44,6 +44,27 @@
   box-sizing: border-box;
 }
 
+/* Performance optimizations */
+*,
+*::before,
+*::after {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   font-family: var(--font-body);
   background: linear-gradient(135deg, var(--color-black) 0%, #1a2e1a 30%, var(--color-forest-green) 70%, var(--color-army-green) 100%);
@@ -51,6 +72,18 @@ body {
   color: var(--color-white);
   line-height: 1.6;
   overflow-x: hidden;
+  /* Performance optimizations */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Better performance on mobile */
+    text-rendering: optimizeSpeed;
+  }
 }
 
 .App {
@@ -65,7 +98,7 @@ body {
 }
 
 .section-padding {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .text-center {
@@ -258,5 +291,134 @@ body {
   .army-button {
     padding: 8px 16px;
     font-size: 12px;
+  }
+}
+
+/* Additional mobile performance optimizations */
+@media (max-width: 768px) {
+  /* Disable expensive effects on mobile */
+  .glow-effect {
+    box-shadow: none;
+  }
+  
+  .glow-effect:hover {
+    box-shadow: 0 0 10px rgba(75, 83, 32, 0.3);
+  }
+  
+  /* Reduce animation complexity */
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 15px rgba(118, 255, 3, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(118, 255, 3, 0.4);
+    }
+  }
+  
+  /* Optimize text rendering */
+  body {
+    text-rendering: optimizeSpeed;
+  }
+  
+  /* Reduce backdrop filters for better performance */
+  .hero-badge {
+    backdrop-filter: none;
+    background: rgba(118, 255, 3, 0.2);
+  }
+}/* 
+Layout Improvements */
+.section-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(118, 255, 3, 0.3), transparent);
+  margin: 0;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section + * {
+  margin-top: 0;
+}
+
+/* Improved visual hierarchy */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  /* Prevent layout shift */
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-header .section-title {
+  margin-bottom: 20px;
+}
+
+.section-header .section-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-grey);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Performance optimizations for animations */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+.fade-in-up:not(.animate) {
+  will-change: auto;
+}
+
+/* Better spacing for cards and grids */
+.card-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card-grid.cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card-grid.cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-grid.cols-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .card-grid.cols-2,
+  .card-grid.cols-3,
+  .card-grid.cols-4 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .content-wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    padding: 0 10px;
+  }
+  
+  .section-header {
+    margin-bottom: 30px;
   }
 }

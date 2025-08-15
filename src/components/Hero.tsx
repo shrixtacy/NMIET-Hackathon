@@ -1,35 +1,47 @@
+'use client';
+
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
-import FaultyTerminal from './Backgrounds/FaultyTerminal/FaultyTerminal';
+import FaultyTerminal from './FaultyTerminal';
 
 const Hero = () => {
   return (
     <section className="hero-section relative">
-      {/* Faulty Terminal Background */}
-      <div className="absolute inset-0 z-0" style={{ width: '100%', height: '100%' }}>
+      {/* FaultyTerminal Background - Handles mobile detection internally */}
+      <div className="absolute inset-0 z-10 w-full h-full interactive-terminal" style={{ pointerEvents: 'auto' }}>
         <FaultyTerminal
-          className="opacity-60"
-          brightness={0.6}
-          tint="#00ff41"
-          scale={1.2}
-          gridMul={[3, 2]}
-          digitSize={1.8}
-          scanlineIntensity={0.4}
-          glitchAmount={1.2}
-          flickerAmount={0.8}
-          noiseAmp={0.8}
+          scale={1.5}
+          gridMul={[2, 1]}
+          digitSize={1.2}
+          timeScale={0.5}
+          pause={false}
+          scanlineIntensity={0.5}
+          glitchAmount={1}
+          flickerAmount={1}
+          noiseAmp={1}
+          chromaticAberration={0}
+          dither={0}
           curvature={0.1}
+          tint="#6B8E23"
+          mouseReact={true}
+          mouseStrength={2.0}
           pageLoadAnimation={true}
-          mouseReact={false}
+          brightness={1.8}
+          className="w-full h-full opacity-30"
+          style={{ cursor: 'crosshair', pointerEvents: 'auto' }}
         />
       </div>
 
-      {/* Content overlay */}
-      <div className="container relative z-10 pointer-events-none">
+      {/* Content overlay - Allow pointer events to pass through */}
+      <div className="container relative z-20" style={{ pointerEvents: 'none' }}>
         <div className="hero-content">
           <div className="hero-left">
             <div className="hero-badge fade-in-up">
-              <span className="green-text">🇮🇳</span> Free Registration – Open to All Colleges & Universities
+              Free Registration – Open to All Colleges & Universities
+            </div>
+
+            <div className="nextech-title fade-in-up">
+              NEXTECH 1.0
             </div>
 
             <h1 className="hero-title military-heading fade-in-up">
@@ -44,12 +56,9 @@ const Hero = () => {
               <div className="detail-item">
                 <span className="army-text">📍 Location:</span>NMIET Campus, near AIIMS, Sijua, Patrapada, Bhubaneswar, Odisha 751019
               </div>
-              <div className="detail-item">
-                <span className="army-text">🎯 Format:</span> Stage 1: Online Shortlisting | Stage 2: In-Person Hackathon
-              </div>
             </div>
 
-            <div className="hero-actions fade-in-up pointer-events-auto">
+            <div className="hero-actions fade-in-up" style={{ pointerEvents: 'auto' }}>
               <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button glow-effect">
                 Register Now
               </a>
@@ -61,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-scroll-indicator relative z-10 pointer-events-auto">
+      <div className="hero-scroll-indicator relative z-30 pointer-events-auto">
         <ChevronDown size={24} className="bounce" />
       </div>
     </section>
