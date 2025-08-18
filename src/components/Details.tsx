@@ -50,7 +50,7 @@ const Details: React.FC = () => {
                 <h4>Team Requirements</h4>
                 <ul>
                   <li>Team Size: Minimum 2, Maximum 5 members</li>
-                  <li>Cross-college teams allowed</li>
+                  <li>Cross-college teams are not allowed</li>
                   <li>All members must be current students</li>
                 </ul>
               </div>
@@ -91,7 +91,6 @@ const Details: React.FC = () => {
                 <li>Solutions must address the defense theme</li>
                 <li>Code must be original work created during the event</li>
                 <li>Open source tools and APIs are permitted</li>
-                <li>Final submission must include working demo</li>
                 <li>Source code must be submitted via provided platform</li>
               </ul>
             </div>
@@ -170,7 +169,6 @@ const Details: React.FC = () => {
                 <div className="slide-item">3. Technical Architecture</div>
                 <div className="slide-item">4. Expected Impact</div>
                 <div className="slide-item">5. Scalability & Future Roadmap</div>
-                <div className="slide-item">6-10. Supporting Details & Demo</div>
               </div>
             </div>
           </div>
