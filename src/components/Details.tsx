@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Presentation, MapPin, Clock, Shield, Cpu, Users, Sparkles, Layers, Video, Target, Award, BookOpen, AlertTriangle, Zap } from 'lucide-react';
+import { CheckCircle2, Presentation, MapPin, Clock, Shield, Cpu, Users, Sparkles, Layers, Video, Target, Award, BookOpen, AlertTriangle, Zap, Download, ExternalLink } from 'lucide-react';
 
 const Details: React.FC = () => {
   return (
@@ -169,7 +169,33 @@ const Details: React.FC = () => {
                 <div className="slide-item">3. Technical Architecture</div>
                 <div className="slide-item">4. Expected Impact</div>
                 <div className="slide-item">5. Scalability & Future Roadmap</div>
+                <div className="slide-item">6. Prototype Demo (Optional)</div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Example Pitch Deck */}
+        <section className="pitch-section">
+          <div className="section-header">
+            <ExternalLink className="section-icon" />
+            <h2 className="section-title">Example Pitch Deck</h2>
+          </div>
+          <div className="pitch-content">
+            <p style={{ fontSize: '16px', color: '#cccccc', marginBottom: '30px', textAlign: 'center' }}>
+              To help you structure your slides better, here's an example pitch deck you can use for reference
+            </p>
+            <div style={{ textAlign: 'center' }}>
+              <a
+                href="https://drive.google.com/file/d/1yilMbVdmo6KeNDqNme4qUGGtVSpXJQNr/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="army-button glow-effect"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+              >
+                <ExternalLink size={18} />
+                View Example Pitch Deck
+              </a>
             </div>
           </div>
         </section>
