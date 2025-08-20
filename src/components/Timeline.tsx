@@ -20,7 +20,7 @@ const Timeline = () => {
     {
       icon: Calendar,
       title: "Stage 2: In-Person Hackathon",
-      description: "48-hour intensive hackathon at NMIET campus",
+      description: "24-hour intensive hackathon at NMIET campus",
       date: "Sept 19-20, 2025",
       status: "upcoming"
     },
