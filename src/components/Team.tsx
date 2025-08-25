@@ -6,7 +6,7 @@ import '../styles/team.css';
 const Team: React.FC = () => {
   const coreTeam = [
     {
-      name: "Shriyansh Das",
+      name: "Shriyansh Dash",
       role: "Event Mastermind",
       contribution: "The driving force behind every performance and guest session. From the first spotlight to the final applause, ensures every moment is perfectly timed, flawlessly executed, and unforgettable.",
       skills: ["Event Flow Architect", "Performance Maestro"],
