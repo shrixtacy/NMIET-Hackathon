@@ -57,7 +57,7 @@ const About = () => {
               </strong>
               <br />
               <span style={{fontSize: '1.1em'}}>
-                Whether it's <span className="green-text" style={{fontWeight: 'bold', textShadow: '0 0 8px rgba(0, 255, 0, 0.4)'}}>Software, Hardware, IoT, or SaaS</span> — create innovative solutions that can strengthen and support our <span className="green-text" style={{fontWeight: 'bold'}}>Indian system</span>.
+                Whether it's <span className="green-text" style={{fontWeight: 'bold', textShadow: '0 0 8px rgba(0, 255, 0, 0.4)'}}>Software, Hardware, IoT or SaaS</span> — create innovative solutions that can strengthen and support our <span className="green-text" style={{fontWeight: 'bold'}}>Indian system</span>.
               </span>
             </p>
           </div>
