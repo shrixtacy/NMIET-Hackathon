@@ -49,6 +49,19 @@ const About = () => {
             </p>
           </div>
 
+          {/* Build Anything Section */}
+          <div className="about-text-box">
+            <p className="about-main-text text-center">
+              <strong className="green-text" style={{fontSize: '1.2em', textShadow: '0 0 10px rgba(0, 255, 0, 0.3)'}}>
+                🚀 Build Anything That Makes an Impact! 🚀
+              </strong>
+              <br />
+              <span style={{fontSize: '1.1em'}}>
+                Whether it's <span className="green-text" style={{fontWeight: 'bold', textShadow: '0 0 8px rgba(0, 255, 0, 0.4)'}}>Software, Hardware, IoT, or SaaS</span> — create innovative solutions that can strengthen and support our <span className="green-text" style={{fontWeight: 'bold'}}>Indian system</span>.
+              </span>
+            </p>
+          </div>
+
           {/* Why We Chose This Topic Section */}
           <h3 className="military-heading section-subtitle text-center">
             Why We Chose <span className="green-text">This Topic</span>

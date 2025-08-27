@@ -30,6 +30,8 @@ const Mission: React.FC = () => {
                 cutting-edge digital solutions to maintain operational superiority. Traditional defense systems face 
                 challenges in real-time data processing, secure communication, threat assessment and soldier support 
                 in high-risk environments.
+
+                Build Anything That Makes an Impact! Whether it’s Software, Hardware, IoT or SaaS — create innovative solutions that can strengthen and support our Indian system.
               </p>
               
               <div className="challenge-stats">
