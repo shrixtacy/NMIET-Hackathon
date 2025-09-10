@@ -3,6 +3,7 @@ import { Inter, Oswald, Montserrat } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import AnnouncementBanner from '@/components/AnnouncementBanner'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -73,6 +74,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${oswald.variable} ${montserrat.variable}`}>
         <div className="App">
+          <AnnouncementBanner />
           <Navbar />
           <main>{children}</main>
           <Footer />

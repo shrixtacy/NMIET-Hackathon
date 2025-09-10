@@ -7,7 +7,7 @@ const Timeline = () => {
       icon: FileText,
       title: "Stage 1: Online Shortlisting",
       description: "Submit your pitch deck and team details",
-      date: "Aug 15 - Sept 10, 2025",
+      date: "Aug 15 - Sept 12, 2025",
       status: "active"
     },
     {
