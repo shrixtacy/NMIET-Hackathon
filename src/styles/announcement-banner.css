@@ -1,0 +1,147 @@
+/* Announcement Banner Styles */
+.announcement-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #1a2e1a 100%);
+  border-bottom: 2px solid var(--color-bright-green);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.announcement-content {
+  display: flex;
+  align-items: center;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-bright-green);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(118, 255, 3, 0.5);
+}
+
+.announcement-item svg {
+  color: var(--color-light-green);
+  filter: drop-shadow(0 0 5px rgba(154, 205, 50, 0.7));
+}
+
+.announcement-separator {
+  color: var(--color-light-green);
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 0 10px rgba(154, 205, 50, 0.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause animation on hover */
+.announcement-banner:hover .announcement-content {
+  animation-play-state: paused;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .announcement-banner {
+    height: 35px;
+  }
+  
+  .announcement-content {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .announcement-item {
+    font-size: 12px;
+    gap: 6px;
+  }
+  
+  .announcement-item svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .announcement-separator {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-banner {
+    height: 32px;
+  }
+  
+  .announcement-content {
+    gap: 12px;
+    padding: 0 12px;
+  }
+  
+  .announcement-item {
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .announcement-item svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .announcement-separator {
+    font-size: 12px;
+  }
+}
+
+/* Adjust navbar position to account for banner */
+.terminal-navbar {
+  top: 40px !important;
+}
+
+@media (max-width: 768px) {
+  .terminal-navbar {
+    top: 35px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-navbar {
+    top: 32px !important;
+  }
+}
+
+/* Adjust hero section padding to account for banner */
+.hero-section {
+  padding-top: 180px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 175px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 172px !important;
+  }
+}

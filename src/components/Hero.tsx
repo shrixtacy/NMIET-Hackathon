@@ -58,6 +58,13 @@ const Hero = () => {
               </div>
             </div>
 
+            <div className="registration-deadline-notice fade-in-up">
+              <div className="deadline-badge">
+                <span className="deadline-icon">⏰</span>
+                <span className="deadline-text">We have extended the Registration deadline till 12th September</span>
+              </div>
+            </div>
+
             <div className="hero-actions fade-in-up" style={{ pointerEvents: 'auto' }}>
               <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button glow-effect">
                 Register Now
