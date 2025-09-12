@@ -32,7 +32,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'MISSION', href: '/mission' },
     { name: 'GUIDELINES', href: '/details' },
-    { name: 'REGISTER', href: 'https://forms.gle/k9WmRjaxUubhgcPH9' },
+    { name: 'REGISTRATIONS CLOSED', href: '#', disabled: true },
     { name: 'OUR TEAM', href: '/team' },
     { name: 'CONTACT', href: '/contact' }
   ];
@@ -57,7 +57,16 @@ const Navbar = () => {
 
         <div className="navbar-menu desktop-menu">
           {navItems.map((item, index) => (
-            item.href.startsWith('#') ? (
+            item.disabled ? (
+              <span
+                key={index}
+                className="nav-link"
+                style={{ cursor: 'not-allowed', opacity: 0.6 }}
+              >
+                <span className="nav-prompt">$</span>
+                <span className="nav-command">{item.name}</span>
+              </span>
+            ) : item.href.startsWith('#') ? (
               <a
                 key={index}
                 href={item.href}
@@ -106,7 +115,16 @@ const Navbar = () => {
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <div className="mobile-menu-content">
           {navItems.map((item, index) => (
-            item.href.startsWith('#') ? (
+            item.disabled ? (
+              <span
+                key={index}
+                className="mobile-nav-link"
+                style={{ cursor: 'not-allowed', opacity: 0.6 }}
+              >
+                <span className="nav-prompt">$</span>
+                <span className="nav-command">{item.name}</span>
+              </span>
+            ) : item.href.startsWith('#') ? (
               <a
                 key={index}
                 href={item.href}

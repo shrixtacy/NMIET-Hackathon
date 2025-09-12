@@ -61,14 +61,14 @@ const Hero = () => {
             <div className="registration-deadline-notice fade-in-up">
               <div className="deadline-badge">
                 <span className="deadline-icon">⏰</span>
-                <span className="deadline-text">We have extended the Registration deadline till 12th September</span>
+                <span className="deadline-text">Registrations are closed. Shortlist will be out on 15th Sept.</span>
               </div>
             </div>
 
             <div className="hero-actions fade-in-up" style={{ pointerEvents: 'auto' }}>
-              <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button glow-effect">
-                Register Now
-              </a>
+              <div className="army-button glow-effect" style={{ cursor: 'not-allowed', opacity: 0.6 }}>
+                Registrations are closed
+              </div>
               <a href="#about" className="learn-more-btn">
                 Learn More <ChevronDown size={16} />
               </a>
