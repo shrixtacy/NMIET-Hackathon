@@ -19,7 +19,7 @@ const Footer = () => {
                 <h4>Quick Links</h4>
                 <a href="#about">About</a>
                 <a href="#timeline">Timeline</a>
-                <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer">Register</a>
+                <span style={{ color: '#9ca3af', cursor: 'not-allowed' }}>Registrations are closed</span>
                 <a href="#contact">Contact</a>
               </div>
 

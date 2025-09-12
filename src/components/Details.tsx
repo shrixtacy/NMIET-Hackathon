@@ -452,7 +452,7 @@ const Details: React.FC = () => {
         </section>
 
         <div className="cta-banner">
-          <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button glow-effect">Register Your Team</a>
+          <div className="army-button glow-effect" style={{ cursor: 'not-allowed', opacity: 0.6 }}>Registrations are closed</div>
           <a href="#contact" className="learn-more-btn"><Video size={16} /> Contact Us</a>
         </div>
       </div>

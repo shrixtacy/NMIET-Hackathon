@@ -386,10 +386,10 @@ const Mission: React.FC = () => {
             <p>Join us in developing the next generation of defense technology solutions. Your innovation could help protect our nation and support our armed forces.</p>
             
             <div className="cta-buttons">
-              <a href="https://forms.gle/k9WmRjaxUubhgcPH9" target="_blank" rel="noopener noreferrer" className="army-button">
+              <div className="army-button" style={{ cursor: 'not-allowed', opacity: 0.6 }}>
                 <Shield size={20} />
-                Register Your Team
-              </a>
+                Registrations are closed
+              </div>
               <a href="/details" className="learn-more-btn">
                 <BookOpen size={16} />
                 View Full Details
